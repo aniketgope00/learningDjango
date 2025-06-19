@@ -20,3 +20,13 @@ models.py   -> contains database models
 
 flow: url->route->views 
 
+Templates and Errors:
+(a) Create views.py
+(b) Define functions in views.py
+(c) Go to urls and add paths as path("<name>", views.<def_name>, name = <name>)
+(d) Create templates and static directory in root folder
+(e) Include 'templates' in DIRS:list in settings.py
+(f) Templating Enging -> {%load static%}, {%static "style.css"%}
+(g) Include static Path as STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] in settings.py
+(h) Use render(request, <template_name>)
+
